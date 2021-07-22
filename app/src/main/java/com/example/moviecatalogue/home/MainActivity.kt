@@ -15,12 +15,13 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 class MainActivity : AppCompatActivity() {
 
     private val model: MovieViewModel by viewModel()
-    private lateinit var binding: ActivityMainBinding
+    private var activityMainBinding : ActivityMainBinding? = null
+    private val binding get() = activityMainBinding!!
     private lateinit var movieAdapter: MovieAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         movieAdapter = MovieAdapter()
@@ -72,5 +73,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun Boolean.progressbar() {
         binding.progressBar.visibility = if (this) View.VISIBLE else View.INVISIBLE
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        activityMainBinding = null
     }
 }
