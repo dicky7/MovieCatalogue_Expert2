@@ -19,7 +19,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.dapoidev.catmov.favorite"
+        applicationId "com.dicky.moviecatalogue"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
