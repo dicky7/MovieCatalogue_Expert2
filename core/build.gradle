@@ -13,6 +13,9 @@ def IMAGE_URL = '"' + IMAGE_URL + '"' ?: '"Define your BASE URL"'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
+    lintOptions {
+        abortOnError false
+    }
 
     defaultConfig {
         minSdkVersion 21
