@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MovieCatalogue</string>
+    <string name="tittle_movie">Tittle Movie</string>
+    <string name="genre_movie">Genre Movie</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share_text">Share This Movie App Now</string>
+    <string name="movie">Movie</string>
+    <string name="tvShow">Tv Show</string>
+    <string name="lorem_ipsum_or_lipsum_as_it_is_sometimes_known">Lorem ipsum, or lipsum as it is sometimes known,</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="genre">Genre</string>
+    <string name="tanggal_realese">Tanggal Realese</string>
+    <string name="overview">Overview</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
